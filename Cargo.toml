@@ -1,0 +1,10 @@
+[package]
+name = "fuel_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["macros"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+fuels = "0.62.0"

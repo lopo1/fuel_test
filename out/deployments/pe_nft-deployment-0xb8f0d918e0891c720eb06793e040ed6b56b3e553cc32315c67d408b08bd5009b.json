@@ -1,0 +1,9 @@
+{
+  "transaction_id": "0x4390ff617638467ea6009d36828c2d224c12f2be89b9cc60e07258b31c46cf0a",
+  "salt": "0x4ae1fa091d92b1c64f1ee3cfb9910b2647c3a99add3338b3540e28e786732e1d",
+  "network_endpoint": "https://beta-5.fuel.network",
+  "chain_id": 0,
+  "contract_id": "0xb8f0d918e0891c720eb06793e040ed6b56b3e553cc32315c67d408b08bd5009b",
+  "deployment_size": 49280,
+  "deployed_block_id": "0x383849c374bf21877aef39081c3bdecef7708930e18bfdf3d7df0194ca22772f"
+}
