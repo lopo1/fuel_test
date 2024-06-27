@@ -22,7 +22,7 @@ async fn main() {
             .parse()
             .expect("Invalid ID");
 
-    let hex_str = format!("{:064x}", 1);
+    let hex_str = format!("{:064x}", 5);
 
     // 添加 '0x' 前缀
     let hex_str_with_prefix = format!("0x{}", hex_str);
@@ -35,7 +35,9 @@ async fn main() {
     let asset = asset_id.value;
     println!("asset {:?}",asset);
     let form = Identity::Address(wallet.address().into());
-    let init = contract_instance.methods().constructor(form).call().await.unwrap();
+    // let init = contract_instance.methods().constructor(form).call().await.unwrap();
+    let balances = wallet.get_balances().await.unwrap();
+    println!("balances: {:?}", balances);
     // 将数字转换为十六进制字符串
     let burn = contract_instance.methods().burn(sub_id,1).with_variable_output_policy(VariableOutputPolicy::EstimateMinimum).with_tx_policies(TxPolicies::default()).call().await;
 
